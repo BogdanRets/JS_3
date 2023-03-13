@@ -14,7 +14,8 @@ document.write("<br>");
 
 document.write("Замініть значення всередині на «Класика»:");
 document.write("<br>");
-let kar = firstarr[1] = "Класика"; //замінюємо "Блюз" на "Класика"
+const kar = Math.floor(firstarr.length / 2);
+firstarr.splice(kar, 1, "Класика");
 document.write("<span class='sec'>", firstarr.join(" "), "</span>");
 document.write("<br>");
 document.write("<br>");
